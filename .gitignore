@@ -1,0 +1,10 @@
+citibikenyc/data/202405-citibike-tripdata_1.csv
+citibikenyc/data/202405-citibike-tripdata_2.csv
+citibikenyc/data/202405-citibike-tripdata_3.csv
+citibikenyc/data/202405-citibike-tripdata_4.csv
+citibikenyc/data/202405-citibike-tripdata_5.csv
+citibikenyc/data/JC-202405-citibike-tripdata.csv
+dev.duckdb
+logs/dbt.log
+citibikenyc/data/
+logs/

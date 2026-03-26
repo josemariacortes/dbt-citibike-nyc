@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: citibikenyc_trips
+    description: "Modelo de datos para los viajes en bicicleta del 2 cuatrimestre del año 2024."
+
+  - name: citibikenyc_jc_trips
+    description: "Modelo de datos para los viajes en bicicleta JC del 2 cuatrimestre del año 2024."
