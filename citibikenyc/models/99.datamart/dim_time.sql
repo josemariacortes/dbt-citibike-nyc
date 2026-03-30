@@ -3,7 +3,7 @@
 WITH TimeSeries AS (
     SELECT
         r.datetime_value::TIME AS ID,
-        EXTRACT(HOUR FROM r.datetime_value) AS hour,
+        EXTRACT(HOUR FROM r.datetime_value) AS second,
         CASE
             WHEN EXTRACT(HOUR FROM r.datetime_value) < 6 THEN 'Night'
             WHEN EXTRACT(HOUR FROM r.datetime_value) < 12 THEN 'Morning'
