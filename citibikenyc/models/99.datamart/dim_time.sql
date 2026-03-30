@@ -3,7 +3,6 @@
 WITH TimeSeries AS (
     SELECT
         r.datetime_value::TIME AS ID,
-        EXTRACT(HOUR FROM r.datetime_value) AS second,
         CASE
             WHEN EXTRACT(HOUR FROM r.datetime_value) < 6 THEN 'Night'
             WHEN EXTRACT(HOUR FROM r.datetime_value) < 12 THEN 'Morning'
@@ -13,7 +12,7 @@ WITH TimeSeries AS (
     FROM range(
         TIMESTAMP '2024-01-01 00:00:00',
         TIMESTAMP '2024-01-01 23:59:59',
-        INTERVAL 1 hour
+        INTERVAL 1 minute
     ) AS r(datetime_value)
 )
 SELECT * FROM TimeSeries

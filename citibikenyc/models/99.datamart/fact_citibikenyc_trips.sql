@@ -6,6 +6,8 @@ WITH tmp_data AS (
         ride_id
         ,member_casual
         ,rideable_type
+        ,trip_distance_km
+        ,trip_duration_minutes
         ,started_at
         ,ended_at
         ,start_station_id  
