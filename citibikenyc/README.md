@@ -46,8 +46,18 @@
 ## Ejecución del proyecto
 
 >> Es recomendable hacer una limpieza del enetorno si ya se ha ejecutado/depurado anteriormente (descrito mñas adelante).
+- docker exec -it dbt_demo bash
+- cd citibikenyc
+  Ejecutamos los procesos.
 - dbt run
+- 
+## Testeamos  y nalizamos la solución
 - dbt test
+- dbt docs generate
+- dbt docs serve --host 0.0.0.0 --port 8080
+
+
+
 
 ### Como limpiar la BBDD duck.db
 
