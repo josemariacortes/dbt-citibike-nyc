@@ -49,18 +49,27 @@
 - dbt run
 - dbt test
 
-# Como limpiar la BBDD duck.db
+### Como limpiar la BBDD duck.db
 
 cd /dbt_project/citibikenyc
-
-## 1. Eliminar la base de datos completa (reset total)
+#### 1. Eliminar la base de datos completa (reset total)
 rm -f dev.duckdb
 
-## 2. (Opcional pero recomendado) Limpiar caché de dbt
+#### 2. (Opcional pero recomendado) Limpiar caché de dbt
 dbt clean
 
-## 3. Ejecutar el pipeline desde cero
+### 3. Ejecutar el pipeline desde cero
 dbt run
+
+# Analisis de Datos Final
+
+Incluidos en el directorio tenemos tres consultas
+>1_top_ten_start_station
+>>- Las diez estaciones de salida con más viajes.
+>2_amout_user_part_day
+>>- Número de viajes por parte del día.
+>3_user_type_avg
+>>- Media de los viajes por tipo de usuario.
 
 
 
