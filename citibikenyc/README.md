@@ -76,9 +76,11 @@ dbt run
 Incluidos en el directorio tenemos tres consultas
 >1_top_ten_start_station
 >>- Las diez estaciones de salida con más viajes.
+>>- 
 >2_amout_user_part_day
 >>- Número de viajes por parte del día.
->3_user_type_avg
+>>- 
+>3_rideable_type_avg
 >>- Media de los viajes por tipo de usuario.
 
 
