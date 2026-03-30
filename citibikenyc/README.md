@@ -1,15 +1,22 @@
-Welcome to your new dbt project!
+# Proyecto dbt-citibike-nyc
+## Creación del proyecto.
+- Para crear este proyecto partimos del contenedor que se nos proporcionó y seguimos los siguientes pasos.
+>  1. Creamos la carpeta dbt-projec
+>  2. Copiamos el Dockerfile y doccker-compose.ym proporcionados.
+>  3. Cramos el entornos con el comando: docker-compose up -d --build
+>  4. Entramos en el contenedor: docker exec -i dbt_demo bash
+>>  4.1 Inicializamos el proyecto : init citibikenyc 
 
-### Using the starter project
+ ## Utilización del proyecto
 
-Try running the following commands:
+Más a delante se inica como proceder para limpiar los datos previos para proximas ejecuciones.
 - dbt run
 - dbt test
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+## Recursos utilizados:
+- Para la implementación del proyecto se ha seleccionado la api proporcionada por el servicio de alquiler de bicicletas de New York y
+- (https://docs.getdbt.com/docs/introduction)
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
